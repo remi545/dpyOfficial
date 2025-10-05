@@ -23,14 +23,9 @@
           革新的なサウンドで新たな体験を創造する。
         </p>
 
-        <!-- CTA ボタン -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
-          <button class="bg-gradient-to-r from-red-600 to-rose-600 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:scale-105 transition-all duration-200">
-            最新楽曲を聴く
-          </button>
-          <button class="border-2 border-white/20 text-white hover:border-white/40 px-10 py-4 rounded-full font-semibold text-lg transition-all duration-200 hover:scale-105">
-            プロフィール
-          </button>
+        <!-- YouTube動画埋め込み -->
+        <div class="flex justify-center pt-8">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VgCMD7Xe3RQ?si=0P5BT0DLYnHTJB15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>

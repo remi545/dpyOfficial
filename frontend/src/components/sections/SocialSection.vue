@@ -22,14 +22,7 @@
 
 <script setup lang="ts">
 import SocialLink from '../links/SocialLink.vue'
-
-interface SocialItem {
-  name: string
-  href: string
-  color: string
-  gradient: string
-  icon: string
-}
+import type { SocialItem } from '../../types/SocialItem'
 
 const socialLinks: SocialItem[] = [
   {

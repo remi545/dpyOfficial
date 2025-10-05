@@ -32,14 +32,7 @@
 
 <script setup lang="ts">
 import NewsCard from '../cards/NewsCard.vue'
-
-interface NewsItem {
-  id: number
-  date: string
-  title: string
-  content: string
-  color: 'red' | 'rose' | 'orange'
-}
+import type { NewsItem } from '../../types/NewsItem'
 
 const newsItems: NewsItem[] = [
   {

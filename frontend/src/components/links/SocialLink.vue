@@ -37,17 +37,7 @@
 </template>
 
 <script setup lang="ts">
-interface SocialItem {
-  name: string
-  href: string
-  color: string
-  gradient: string
-  icon: string
-}
+import type { SocialItem } from '../../types/SocialItem'
 
-interface Props {
-  social: SocialItem
-}
-
-defineProps<Props>()
+defineProps<{ social: SocialItem }>()
 </script>

@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+build/
+dist/
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage.xml
+*.cover
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.pid
+*.log
+.env
+.env.*
+backend/migrations/
+
+# Alembic
+backend/migrations/versions/
+
+# VSCode
+.vscode/
+
+# Node.js / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.eslintcache
+frontend/.env*
+
+# TypeScript
+*.tsbuildinfo
+
+# Tailwind CSS
+frontend/tailwind.config.js
+frontend/tailwind.config.ts
+
+# Docker
+*.pid
+*.db
+infra/*.pid
+infra/*.db
+
+# Logs
+*.log
+log/
+logs/
+
+# CI/CD
+.github/
+.github/workflows/
+
+# OS固有
+Thumbs.db
+.DS_Store

@@ -57,7 +57,25 @@ pip install -r requirements.txt
 APIサーバの起動は VS Code の launch.json を使ってください。
 F5キーまたは「実行とデバッグ」→「FastAPI: Uvicorn (reload)」で起動できます。
 
-（frontend の起動手順は雛形完成後に追記します）
+
+### frontend の起動・デバッグ手順（Windows）
+
+1. frontend ディレクトリに移動
+2. 依存パッケージをインストール
+3. 開発サーバを起動
+4. ブラウザで http://localhost:5173 を開く
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+VS Code でデバッグする場合は、
+- 「実行とデバッグ」→「Vite: Dev Server」などのタスクを利用
+- ソースマップ対応でブレークポイント可能
+
+※初回は `npm install` で依存パッケージ（vue, vite, tailwindcss など）を必ずインストールしてください。
 
 ---
 

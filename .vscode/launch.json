@@ -16,6 +16,18 @@
       "env": {},
       "console": "integratedTerminal",
       "justMyCode": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Vite: Dev Server",
+      "cwd": "${workspaceFolder}/frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run", "dev"
+      ],
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }

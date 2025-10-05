@@ -38,6 +38,18 @@
 
 ## 開発環境 / 起動方法
 
+### 必要なアプリ・ツール
+
+- Python 3.13 以上（バックエンド用）
+- Node.js 18 以上（フロントエンド用）
+- npm（Node.jsに同梱）
+- Docker / Docker Compose（コンテナ実行・開発用）
+- VS Code（推奨IDE）
+- Git（バージョン管理）
+
+各アプリは公式サイトからインストールしてください。
+VS Code には Python, ESLint, Prettier などの拡張機能を導入すると便利です。
+
 ### backend の仮想環境 (venv) 作成・実行手順（Windows）
 
 1. backend ディレクトリに移動

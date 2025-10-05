@@ -38,7 +38,26 @@
 
 ## 開発環境 / 起動方法
 
-メモ: `frontend` と `backend` の雛形を追加した後に、具体的な起動手順（クイックスタート）を README に追記します。
+### backend の仮想環境 (venv) 作成・実行手順（Windows）
+
+1. backend ディレクトリに移動
+2. venv を作成
+3. VS Code 右下に「このフォルダーの仮想環境を有効化しますか？」と表示されたら「はい」を押す
+4. 依存パッケージをインストール
+5. FastAPI サーバを起動
+
+```powershell
+cd backend
+python -m venv .venv
+# （VS Code右下のメッセージで「はい」を押して仮想環境を有効化）
+pip install -r requirements.txt
+```
+
+この手順で `.venv` 仮想環境が backend ディレクトリ内に作成され、依存パッケージ（fastapi, uvicorn など）がインストールされます。
+APIサーバの起動は VS Code の launch.json を使ってください。
+F5キーまたは「実行とデバッグ」→「FastAPI: Uvicorn (reload)」で起動できます。
+
+（frontend の起動手順は雛形完成後に追記します）
 
 ---
 

@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI: Uvicorn (reload)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/.venv/Scripts/uvicorn.exe",
+      "args": [
+        "app:app",
+        "--reload",
+        "--host", "127.0.0.1",
+        "--port", "8000"
+      ],
+      "cwd": "${workspaceFolder}/backend",
+      "env": {},
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

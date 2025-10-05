@@ -2,20 +2,18 @@
 
 ギタリスト「DPY」の公式サイト用リポジトリです。コンテンツ公開、イベント情報、ディスコグラフィ、問い合わせ機能などを提供することを目的としたフルスタック Web アプリケーションを想定します。
 
-## リポジトリ構成（正式）
-
-infra は Docker ベースでローカル／本番のコンテナ構築を行い、docs には要件定義書や設計書類を格納します。
+## リポジトリ構成
 
 ```
 /
 ├─ backend/          # FastAPI アプリケーション
 │  ├─ app/
-│  ├─ migrations/    # Alembic 等のマイグレーション定義（※メモ）
+│  ├─ migrations/    # Alembic 等のマイグレーション定義
 │  └─ requirements.txt
 ├─ frontend/         # Vue 3 + TypeScript (Vite)
 │  ├─ src/
 │  └─ package.json
-├─ infra/            # Dockerfile, docker-compose.yml, k8s など（Docker を使用）
+├─ infra/            # Dockerfile, docker-compose.yml, k8s など
 ├─ docs/             # 要件定義書、設計書、運用ドキュメント
 └─ README.md
 ```

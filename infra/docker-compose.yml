@@ -9,30 +9,20 @@ services:
     volumes:
       - ../backend:/app
     environment:
-      DATABASE_URL: postgresql+asyncpg://dpy:password@db:5432/dpy_official
+      MONGODB_URL: mongodb://dpy:password@db:27017/dpy_official?authSource=admin
     depends_on:
       - db
 
   db:
-    image: postgres:15
+    image: mongo:7
     environment:
-      POSTGRES_USER: dpy
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: dpy_official
+      MONGO_INITDB_ROOT_USERNAME: dpy
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: dpy_official
     ports:
-      - "5432:5432"
+      - "27017:27017"
     volumes:
-      - db_data:/var/lib/postgresql/data
-
-  pgadmin:
-    image: dpage/pgadmin4:latest
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@example.com
-      PGADMIN_DEFAULT_PASSWORD: admin
-    ports:
-      - "8080:80"
-    depends_on:
-      - db
+      - db_data:/data/db
 
 volumes:
   db_data:

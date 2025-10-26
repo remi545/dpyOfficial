@@ -57,10 +57,6 @@ infra/*.db
 log/
 logs/
 
-# CI/CD
-.github/
-.github/workflows/
-
 # OS固有
 Thumbs.db
 .DS_Store

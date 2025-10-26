@@ -7,15 +7,18 @@
       "request": "launch",
       "program": "${workspaceFolder}/backend/.venv/Scripts/uvicorn.exe",
       "args": [
-        "app:app",
+        "app.main:app",
         "--reload",
         "--host", "127.0.0.1",
         "--port", "8000"
       ],
       "cwd": "${workspaceFolder}/backend",
-      "env": {},
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/backend"
+      },
       "console": "integratedTerminal",
-      "justMyCode": true
+      "justMyCode": true,
+      "preLaunchTask": "docker-compose up"
     },
     {
       "type": "node",

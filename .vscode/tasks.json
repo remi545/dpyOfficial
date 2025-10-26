@@ -6,11 +6,18 @@
       "type": "shell",
       "command": "docker-compose",
       "args": ["up", "-d"],
-      "options": {
-        "cwd": "${workspaceFolder}/infra"
-      },
       "group": "build",
-      "problemMatcher": []
+      "problemMatcher": [],
+      "dependsOn": ["vite build"]
+    }
+    ,
+    {
+      "label": "vite build",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "build", "--prefix", "frontend"],
+      "group": "build",
+      "problemMatcher": ["$tsc"]
     }
   ]
 }

@@ -2,17 +2,15 @@ version: '3.8'
 services:
   backend:
     build:
-      context: ..
-      dockerfile: infra/Dockerfile
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8000:8000"
     volumes:
-      - ../backend:/app
+      - ./backend/app:/app/app
     environment:
-      MONGODB_URL: mongodb://dpy:password@db:27017/dpy_official?authSource=admin
-    depends_on:
-      - db
-
+      - PYTHONUNBUFFERED=1
+  
   db:
     image: mongo:7
     environment:

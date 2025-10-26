@@ -3,11 +3,7 @@ from fastapi import APIRouter, HTTPException
 from beanie import PydanticObjectId
 from .models import User
 
-router = APIRouter()
-
-@router.get("/")
-async def read_root():
-    return {"message": "DPY Official API is running."}
+router = APIRouter(prefix="/api")
 
 @router.post("/users", response_model=User)
 async def create_user(name: str) -> User:

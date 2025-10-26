@@ -1,0 +1,16 @@
+# 除外したいファイル・ディレクトリ
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.env
+.vscode/
+*.log
+node_modules/
+dist/
+frontend/dist/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/static/__pycache__/

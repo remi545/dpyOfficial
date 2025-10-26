@@ -13,7 +13,6 @@
 ├─ frontend/         # Vue 3 + TypeScript (Vite)
 │  ├─ src/
 │  └─ package.json
-├─ infra/            # Dockerfile, docker-compose.yml, k8s など
 ├─ docs/             # 要件定義書、設計書、運用ドキュメント
 └─ README.md
 ```
@@ -103,4 +102,5 @@ VS Code でデバッグする場合は、
 
 ## デプロイ
 
-メモ: 本番デプロイはコンテナイメージを用いて行います。詳細なクラウド選定・インフラ構成（例: GCP, AWS, Fly.io, DigitalOcean）は要件確定後に決定します。
+メモ: 本番デプロイはルート直下のDockerfile/docker-compose.ymlを用いたコンテナイメージで行います。　　
+詳細なクラウド選定・インフラ構成（例: GCP, AWS, Fly.io, DigitalOcean）は要件確定後に決定します。

@@ -28,7 +28,6 @@
 backend/app/     # FastAPIアプリ (main.py, api.py, db.py, models.py)
 frontend/src/    # Vueアプリ (components/, types/)
 doc/             # 設計書 (requirements.md, db_schema.md, screens/)
-infra/           # Docker設定
 ```
 
 ## 重要な参照先

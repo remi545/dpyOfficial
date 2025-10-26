@@ -24,8 +24,7 @@
 
 - Backend: Python 3.13、FastAPI
 - ASGI サーバ: Uvicorn
-- ORM / DB: SQLAlchemy / SQLModel / asyncpg + PostgreSQL
-- Migrations: Alembic
+- DB/ODM: MongoDB + Beanie（PyMongo Async API対応 ODM）
 - Frontend: Vue 3 + TypeScript
 - Build: Vite
 - Styling: Tailwind CSS
@@ -88,12 +87,6 @@ VS Code でデバッグする場合は、
 - ソースマップ対応でブレークポイント可能
 
 ※初回は `npm install` で依存パッケージ（vue, vite, tailwindcss など）を必ずインストールしてください。
-
----
-
-## マイグレーション
-
-メモ: マイグレーションには Alembic を使います。マイグレーションの初期化・実行手順は backend の雛形を作成後に記載します。
 
 ---
 

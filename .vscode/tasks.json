@@ -9,13 +9,25 @@
       "group": "build",
       "problemMatcher": [],
       "dependsOn": ["vite build"]
-    }
-    ,
+    },
     {
-      "label": "vite build",
+      "label": "vite build (for local dev)",
       "type": "shell",
       "command": "npm",
       "args": ["run", "build", "--prefix", "frontend"],
+      "group": "build",
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "label": "vite build (GitHub Pages)",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "build", "--prefix", "frontend"],
+      "options": {
+        "env": {
+          "GITHUB_PAGES": "true"
+        }
+      },
       "group": "build",
       "problemMatcher": ["$tsc"]
     }

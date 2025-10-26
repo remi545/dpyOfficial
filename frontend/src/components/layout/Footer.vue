@@ -1,5 +1,5 @@
 <template>
-  <footer class="relative z-10 py-12 px-6 border-t border-white/5">
+  <footer class="relative z-10 py-12 px-6 border-t border-white/5 bg-zinc-900">
     <div class="container mx-auto">
       <div class="text-center space-y-6">
         <!-- ロゴ -->

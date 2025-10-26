@@ -9,7 +9,7 @@ const goHome = () => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-900 text-white flex items-center justify-center">
+  <div class="text-white flex items-center justify-center">
     <div class="text-center">
       <h1 class="text-9xl font-bold text-gray-700 mb-4">404</h1>
       <h2 class="text-3xl font-semibold mb-6">Page Not Found</h2>

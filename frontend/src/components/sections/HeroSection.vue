@@ -25,7 +25,17 @@
 
         <!-- YouTube動画埋め込み -->
         <div class="flex justify-center pt-8">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/VgCMD7Xe3RQ?si=0P5BT0DLYnHTJB15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="w-[80vw] max-w-5xl aspect-video">
+            <iframe
+              class="w-full h-full rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/VgCMD7Xe3RQ?si=0P5BT0DLYnHTJB15"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>

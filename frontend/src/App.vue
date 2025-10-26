@@ -6,7 +6,7 @@ import Footer from './components/layout/Footer.vue'
 <template>
   <div id="app">
     <Header />
-    <main>
+  <main class="pt-24 bg-gradient-to-b from-stone-950 via-stone-900 to-neutral-950 min-h-screen">
       <router-view />
     </main>
     <Footer />

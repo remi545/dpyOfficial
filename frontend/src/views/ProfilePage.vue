@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-900 text-white">
+  <div class="text-white">
     <div class="container mx-auto px-4 py-16">
       <h1 class="text-4xl font-bold mb-8">Profile</h1>
       <div class="prose prose-invert max-w-none">

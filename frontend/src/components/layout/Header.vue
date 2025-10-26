@@ -9,14 +9,15 @@
         
         <!-- ナビゲーションメニュー -->
         <div class="hidden md:flex items-center space-x-8">
-          <a 
+          <router-link 
             v-for="item in menuItems" 
             :key="item.name"
-            :href="item.href" 
+            :to="item.to" 
             class="text-white/80 hover:text-white hover:scale-105 transition-all duration-300 text-sm font-medium tracking-wide"
+            active-class="text-white"
           >
             {{ item.name }}
-          </a>
+          </router-link>
         </div>
         
         <!-- モバイルメニューボタン -->
@@ -32,10 +33,10 @@
 
 <script setup lang="ts">
 const menuItems = [
-  { name: 'HOME', href: '#home' },
-  { name: 'PROFILE', href: '#profile' },
-  { name: 'GALLERY', href: '#gallery' },
-  { name: 'LIVE', href: '#live' },
-  { name: 'CONTACT', href: '#contact' }
+  { name: 'HOME', to: '/' },
+  { name: 'PROFILE', to: '/profile' },
+  { name: 'GALLERY', to: '/gallery' },
+  { name: 'LIVE', to: '/live' },
+  { name: 'CONTACT', to: '/contact' }
 ]
 </script>

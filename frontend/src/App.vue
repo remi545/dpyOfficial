@@ -1,9 +1,16 @@
 <script setup lang="ts">
-import TopPage from './components/TopPage.vue'
+import Header from './components/layout/Header.vue'
+import Footer from './components/layout/Footer.vue'
 </script>
 
 <template>
-  <TopPage />
+  <div id="app">
+    <Header />
+    <main>
+      <router-view />
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <style scoped>

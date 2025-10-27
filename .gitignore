@@ -20,6 +20,7 @@ coverage.xml
 *.log
 .env
 .env.*
+!.env.example
 
 # backend static files
 backend/app/static/

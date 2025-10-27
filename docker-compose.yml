@@ -10,6 +10,7 @@ services:
       - ./backend/app:/app/app
     environment:
       - PYTHONUNBUFFERED=1
+      - MONGODB_URL=mongodb://dpy:password@db:27017/dpy_official?authSource=admin
   
   db:
     image: mongo:7

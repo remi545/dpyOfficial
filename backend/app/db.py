@@ -6,7 +6,12 @@ from pymongo.asynchronous.mongo_client import AsyncMongoClient
 from .models import User
 
 
-MONGODB_URL = os.getenv("MONGODB_URL", "mongodb://dpy:password@db:27017/dpy_official?authSource=admin")
+MONGODB_URL = os.getenv("MONGODB_URL")
+if not MONGODB_URL:
+    raise ValueError(
+        "MONGODB_URL environment variable is required. "
+        "Please set it in your .env file or environment."
+    )
 DATABASE_NAME = "dpy_official"
 
 
